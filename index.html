@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajapur High School - Quality Education Since 1956</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@19.2.4",
+      "react-dom/client": "https://esm.sh/react-dom@19.2.4/client",
+      "lucide-react": "https://esm.sh/lucide-react@0.563.0",
+      "react/": "https://esm.sh/react@^19.2.4/",
+      "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+    }
+  }
+  </script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Tiro Bangla"', 'Shurjo', '"Siyam Rupali"', 'Roboto', 'Arial', 'Poppins', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    /* Global Font Fallback and Base Styles */
+    body {
+      font-family: 'Tiro Bangla', 'Shurjo', 'Siyam Rupali', 'Roboto', 'Arial', 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Ensuring Bengali text renders with priority fonts */
+    [lang="bn"], .font-bn {
+      font-family: 'Tiro Bangla', 'Shurjo', 'Siyam Rupali', sans-serif;
+    }
+
+    /* Custom scrollbar for a more professional look */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e3a8a;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #172554;
+    }
+  </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="antialiased">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
